@@ -369,7 +369,7 @@ table th[class*="col-"] {
 }
 
 .calendar-navbar {
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
 .calendar-event-wrap {
