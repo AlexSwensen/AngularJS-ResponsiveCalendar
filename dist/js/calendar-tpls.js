@@ -1029,7 +1029,7 @@ angular.module("template/rcalendar/day.html", []).run(["$templateCache", functio
     "            </table>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"scrollable\" style=\"height: 400px\">\n" +
+    "    <div>\n" +
     "        <table class=\"table table-bordered table-fixed\">\n" +
     "            <tbody>\n" +
     "            <tr ng-repeat=\"tm in rows track by $index\">\n" +
@@ -1079,7 +1079,7 @@ angular.module("template/rcalendar/month.html", []).run(["$templateCache", funct
     "        </tbody>\n" +
     "    </table>\n" +
     "    <div ng-if=\"showEventDetail\" class=\"event-detail-container\">\n" +
-    "        <div class=\"scrollable\" style=\"height: 200px\">\n" +
+    "        <div>\n" +
     "            <table class=\"table table-bordered table-striped table-fixed\">\n" +
     "                <tr ng-repeat=\"event in selectedDate.events\" ng-if=\"selectedDate.events\">\n" +
     "                    <td ng-if=\"!event.allDay\" class=\"monthview-eventdetail-timecolumn\">{{event.startTime|date: 'HH:mm'}}\n" +
@@ -1131,7 +1131,7 @@ angular.module("template/rcalendar/week.html", []).run(["$templateCache", functi
     "            </table>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"scrollable\" style=\"height: 400px\">\n" +
+    "    <div>\n" +
     "        <table class=\"table table-bordered table-fixed\">\n" +
     "            <tbody>\n" +
     "            <tr ng-repeat=\"row in rows track by $index\">\n" +
