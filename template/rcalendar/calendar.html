@@ -1,18 +1,16 @@
 <div ng-switch="calendarMode">
-    <!--<div class="card">-->
-        <!--<div class="item row calendar-navbar">-->
-            <!--<div class="nav-left col">-->
-                <!--<button type="button" class="button button-stable button-small" ng-click="move(-1)"><i-->
-                        <!--class="icon ion-chevron-left"></i></button>-->
-            <!--</div>-->
-            <!--<div class="calendar-header col"><strong>{{title}}</strong></div>-->
-            <!--<div class="nav-right col">-->
-                <!--<button type="button" class="button button-stable button-small" ng-click="move(1)"><i-->
-                        <!--class="icon ion-chevron-right"></i></button>-->
-            <!--</div>-->
-        <!--</div>-->
-        <dayview ng-switch-when="day"></dayview>
-        <monthview ng-switch-when="month"></monthview>
-        <weekview ng-switch-when="week"></weekview>
-    <!--</div>-->
+    <div class="item row calendar-navbar">
+        <div class="nav-left col">
+            <button type="button" class="button button-stable button-small" ng-click="move(-1)"><i
+                    class="icon ion-chevron-left"></i></button>
+        </div>
+        <div class="calendar-header col"><strong>{{title}}</strong></div>
+        <div class="nav-right col">
+            <button type="button" class="button button-stable button-small" ng-click="move(1)"><i
+                    class="icon ion-chevron-right"></i></button>
+        </div>
+    </div>
+    <dayview ng-switch-when="day"></dayview>
+    <monthview ng-switch-when="month"></monthview>
+    <weekview ng-switch-when="week"></weekview>
 </div>
