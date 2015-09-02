@@ -84,6 +84,7 @@ angular.module('ui.rCalendar', ['ui.rCalendar.tpls'])
             if (self._onDataLoaded) {
                 self._onDataLoaded();
             }
+            self.refreshView();
         };
 
         $scope.move = function (direction) {
@@ -994,17 +995,17 @@ angular.module('ui.rCalendar', ['ui.rCalendar.tpls'])
 angular.module("template/rcalendar/calendar.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/rcalendar/calendar.html",
     "<div ng-switch=\"calendarMode\">\n" +
-    "    <div class=\"item row calendar-navbar\">\n" +
-    "        <div class=\"nav-left col\">\n" +
-    "            <button type=\"button\" class=\"button button-stable button-small\" ng-click=\"move(-1)\"><i\n" +
-    "                    class=\"icon ion-chevron-left\"></i></button>\n" +
-    "        </div>\n" +
-    "        <div class=\"calendar-header col\"><strong>{{title}}</strong></div>\n" +
-    "        <div class=\"nav-right col\">\n" +
-    "            <button type=\"button\" class=\"button button-stable button-small\" ng-click=\"move(1)\"><i\n" +
-    "                    class=\"icon ion-chevron-right\"></i></button>\n" +
-    "        </div>\n" +
-    "    </div>\n" +
+    "    <!--<div class=\"item row calendar-navbar\">-->\n" +
+    "        <!--<div class=\"nav-left col\">-->\n" +
+    "            <!--<button type=\"button\" class=\"button button-stable button-small\" ng-click=\"move(-1)\"><i-->\n" +
+    "                    <!--class=\"icon ion-chevron-left\"></i></button>-->\n" +
+    "        <!--</div>-->\n" +
+    "        <!--<div class=\"calendar-header col\"><strong>{{title}}</strong></div>-->\n" +
+    "        <!--<div class=\"nav-right col\">-->\n" +
+    "            <!--<button type=\"button\" class=\"button button-stable button-small\" ng-click=\"move(1)\"><i-->\n" +
+    "                    <!--class=\"icon ion-chevron-right\"></i></button>-->\n" +
+    "        <!--</div>-->\n" +
+    "    <!--</div>-->\n" +
     "    <dayview ng-switch-when=\"day\"></dayview>\n" +
     "    <monthview ng-switch-when=\"month\"></monthview>\n" +
     "    <weekview ng-switch-when=\"week\"></weekview>\n" +
